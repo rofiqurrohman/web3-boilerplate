@@ -1,0 +1,30 @@
+name = "web3-api"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# Production environment
+[env.production]
+name = "web3-api-production"
+route = "api.yourdomain.com/*"
+
+# Development environment
+[env.development]
+name = "web3-api-dev"
+
+# KV Namespace (optional - untuk caching)
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = "your-kv-namespace-id"
+
+# Environment variables (isi di Cloudflare dashboard)
+# [vars]
+# API_KEY = "your-api-key"
+
+# Cron triggers (untuk scheduled tasks)
+[triggers]
+crons = [
+  "0 */6 * * *"  # Jalankan setiap 6 jam
+]
+
+# Durasi maksimal execution
+# limits = { cpu_ms = 50 }

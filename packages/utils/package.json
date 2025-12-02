@@ -1,0 +1,16 @@
+{
+    "name": "@repo/utils",
+    "version": "0.0.0",
+    "sideEffects": false,
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rofiqurrohman",
+        "directory": "packages/types"
+    },
+    "scripts": {
+        "build": "tsc --noEmit",
+        "lint": "tsc --noEmit"
+    },
+    "devDependencies": {}
+}
